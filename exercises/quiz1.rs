@@ -13,10 +13,17 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+const BASE_APPLE_PRICE: u32 = 2;
+const DISCOUNTED_APPLE_PRICE: u32 = 1;
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(quantity: u32) -> u32 {
+    if quantity > 40 {
+        quantity * DISCOUNTED_APPLE_PRICE
+    } else {
+        quantity * BASE_APPLE_PRICE
+    }
+}
 
 // Don't modify this function!
 #[test]
